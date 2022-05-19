@@ -1,0 +1,376 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Titillium+Web:wght@400;600;700&display=swap");
+
+/* ==== Global ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-family: "Rubik Moonrocks", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: whitesmoke;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: brown;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/city.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: brown;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin: 50px 0 30px 0;
+}
+
+/* Hamburger Menu Button */
+
+.menu-btn {
+  position: absolute;
+  display: block;
+  right: 10px;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  display: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn01 {
+  top: 30px;
+}
+
+.btn02 {
+  top: 35px;
+  visibility: hidden;
+}
+
+.btn03 {
+  top: 40px;
+}
+
+.btn04 {
+  top: 45px;
+  visibility: hidden;
+}
+
+.btn05 {
+  top: 50px;
+}
+
+/* Events */
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: brown;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row .col img {
+  width: 550px;
+  padding: 10px;
+}
+
+.events .row {
+  margin-top: 50px;
+}
+
+.col h4 {
+  font-size: 3vmin;
+  color: brown;
+  margin: 20px auto;
+}
+
+col p {
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
+
+.events .ctn {
+  margin-top: 30px;
+}
+
+.explore {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/forest.jpg");
+  background-position: center;
+  background-size: cover, contain;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explore-content h1 {
+  font-size: 7vmin;
+}
+
+.explore-content .line {
+  margin-bottom: 40px;
+}
+
+.explore-content p {
+  color: rgb(221, 221, 221);
+}
+
+.explore-content .ctn {
+  margin-top: 40px;
+  width: max-content;
+}
+
+.tours .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.content-col {
+  width: 40%;
+  padding: 15px;
+}
+
+.image-col {
+  width: 60%;
+}
+
+.tours .image-gallery img {
+  max-width: 350px;
+  height: 200px;
+}
+
+.content-col h1 {
+  font-size: 7vmin;
+  color: brown;
+  text-align: center;
+}
+
+.content-col p {
+  padding-right: 10px;
+  margin: 30px auto;
+  text-align: justify;
+}
+
+.footer {
+  width: 100%;
+  min-height: 50px;
+  padding: 20px;
+  margin: 0;
+  background-color: brown;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer p {
+  margin: 15px auto;
+  padding: 15px auto;
+}
+
+/* Mobile device */
+
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: brown;
+    border-bottom-right-radius: 30%;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+  /* Events */
+
+  /* upcoming events */
+
+  .col h4 {
+    font-size: 5vmin;
+  }
+
+  .col p {
+    width: 350px;
+    text-align: justify;
+  }
+
+  /* explore the world 3rd section  */
+
+  .explore-content {
+    width: 500px;
+  }
+
+  .explore-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .explore-content p {
+    text-align: justify;
+  }
+
+  .content-col {
+    width: 500px;
+  }
+
+  .content-col .line {
+    margin: 0 5px;
+  }
+
+  .content-col h1,
+  .ctn {
+    margin: 0px 100px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .content-col p {
+    padding: 0;
+    margin: 30px 10px;
+    width: 300px;
+  }
+
+  .tours .image-gallery {
+    justify-content: center;
+  }
+}
+
+/* Animation */
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.ctn:hover {
+  background-color: whitesmoke;
+  color: brown;
+  box-shadow: 2px 2px 5px #00000056;
+}
+
+li:hover {
+  color: brown;
+  cursor: pointer;
+}
